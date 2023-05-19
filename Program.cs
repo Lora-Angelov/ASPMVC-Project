@@ -6,6 +6,7 @@ using ASPMVC.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -18,6 +19,7 @@ builder.Services.AddControllersWithViews();
 
 //ADDED
 builder.Services.AddTransient<WeatherService>();
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
@@ -50,6 +52,14 @@ app.Run();
 
 
 //ADDED
+
+/*public void ConfigureServices(IServiceCollection services)
+{
+    services.AddControllersWithViews();
+
+    services.AddDbContext<SakilaDbContext>(options =>
+        options.UseMySQL("server=localhost;database=sakila;user=root;password=roottoor"));
+}*/
 
 
 

@@ -1,4 +1,4 @@
-﻿@model ASPMVC.Models.WeatherResponse
+﻿@model ASPMVC.Models.Root
 
 <h1>Weather</h1>
 
@@ -7,9 +7,14 @@
     <button type="submit">Get Weather</button>
 </form>
 
-@if (Model != null && Model.Main != null && !String.IsNullOrEmpty(Model.Name))
-    {
-    <h2>@Model.Name</h2>
-    <p>Temperature: @Model.Main.Temp ºC</p>
-    <p>Humidity: @Model.Main.Humidity %</p>
+
+
+
+
+@if (Model != null && Model.list != null && Model.list.Any())
+{
+    <h2>@Model.city.name</h2>
+    <p>Temperature: @Model.list[0].main.temp ºC</p>
+    <p>Humidity: @Model.list[0].main.humidity %</p>
+    <p>Sunrise: @Model.city.sunrise</p>
 }
