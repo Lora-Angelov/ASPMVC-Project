@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 namespace ASPMVC.Models
 {
     public class Sakila
@@ -27,5 +27,5 @@ namespace ASPMVC.Models
         public DateTime last_update { get; set; }
         // add more fields 
     }
-}*/
+}
 

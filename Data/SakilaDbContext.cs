@@ -1,4 +1,4 @@
-﻿/*using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using ASPMVC.Models; 
 
 namespace ASPMVC.Data 
@@ -14,4 +14,4 @@ namespace ASPMVC.Data
         public DbSet<film> film { get; set; }
         // Add more DbSets for other tables
     }
-}*/
+}

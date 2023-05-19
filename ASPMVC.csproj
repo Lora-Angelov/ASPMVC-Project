@@ -10,6 +10,7 @@
   <ItemGroup>
     <None Remove="Services\" />
     <None Remove="Views\Weather\" />
+    <None Remove="Views\Sakila\" />
   </ItemGroup>
   <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
@@ -30,5 +31,6 @@
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="Views\Weather\" />
+    <Folder Include="Views\Sakila\" />
   </ItemGroup>
 </Project>

@@ -51,15 +51,18 @@ app.MapRazorPages();
 app.Run();
 
 
+
+
+
 //ADDED
 
-/*public void ConfigureServices(IServiceCollection services)
+public void ConfigureServices(IServiceCollection services)
 {
     services.AddControllersWithViews();
 
     services.AddDbContext<SakilaDbContext>(options =>
         options.UseMySQL("server=localhost;database=sakila;user=root;password=roottoor"));
-}*/
+}
 
 
 

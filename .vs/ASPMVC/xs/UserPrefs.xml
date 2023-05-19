@@ -1,3 +1,47 @@
 ﻿<Properties StartupConfiguration="{BE9FCDE4-4255-46FB-8512-E3D620B46F8C}|Default">
+  <MonoDevelop.Ide.ItemProperties.ASPMVC PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Weather/Index.cshtml">
+    <Files>
+      <File FileName="Models/WeatherResponse.cs" Line="51" Column="36" />
+      <File FileName="Controllers/WeatherController.cs" Line="57" Column="1" />
+      <File FileName="Views/Weather/Index.cshtml" Line="10" Column="1" />
+      <File FileName="Program.cs" Line="65" Column="2" />
+      <File FileName="Models/Sakila.cs" Line="1" Column="1" />
+      <File FileName="Controllers/SakilaController.cs" Line="49" Column="1" />
+      <File FileName="Data/SakilaDbContext.cs" Line="17" Column="2" />
+      <File FileName="Views/Sakila/Index.cshtml" Line="28" Column="1" />
+      <File FileName="Controllers/CustomerController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ASPMVC" expanded="True">
+            <Node name="ASPMVC" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="Migrations" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Customer" expanded="True">
+                  <Node name="Customer.cshtml" expanded="True" />
+                </Node>
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" expanded="True" />
+                </Node>
+                <Node name="Weather" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

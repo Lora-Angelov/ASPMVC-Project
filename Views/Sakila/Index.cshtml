@@ -1,0 +1,27 @@
+﻿@model IEnumerable<ASPMVC.Models.actor>
+
+<h1>Actors</h1>
+
+<table>
+    <tr>
+        <th>Actor ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var actor in Model)
+    {
+        <tr>
+            <td>@actor.actor_id</td>
+            <td>@actor.first_name</td>
+            <td>@actor.last_name</td>
+            <td>
+                <a asp-action="Add" asp-route-id="@actor.actor_id">Add</a> |
+                <a asp-action="Edit" asp-route-id="@actor.actor_id">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@actor.actor_id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
+
