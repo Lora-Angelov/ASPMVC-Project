@@ -14,6 +14,7 @@
 @if (Model != null && Model.list != null && Model.list.Any())
 {
     <h2>@Model.city.name</h2>
+    <img src="~/icons/@(Model.list[0].weather[0].icon).png" alt="Weather icon" />
     <p>Temperature: @((Model.list[0].main.temp - 273.15).ToString("F2")) ºC</p>
     <p>Feels like: @((Model.list[0].main.feels_like - 273.15).ToString("F2")) ºC</p>
     <p>Humidity: @Model.list[0].main.humidity %</p>
@@ -23,6 +24,8 @@
     <p>Timezone: @TimeSpan.FromSeconds(Model.city.timezone).ToString(@"hh\:mm\:ss")</p>
     <p>Sunrise: @DateTimeOffset.FromUnixTimeSeconds(@Model.city.sunrise).ToLocalTime()</p>
     <p>Sunset: @DateTimeOffset.FromUnixTimeSeconds(@Model.city.sunset).ToLocalTime()</p>
+
+
 
 }
 
