@@ -14,7 +14,20 @@
 @if (Model != null && Model.list != null && Model.list.Any())
 {
     <h2>@Model.city.name</h2>
-    <p>Temperature: @Model.list[0].main.temp ºC</p>
+    <p>Temperature: @((Model.list[0].main.temp - 273.15).ToString("F2")) ºC</p>
+    <p>Feels like: @((Model.list[0].main.feels_like - 273.15).ToString("F2")) ºC</p>
     <p>Humidity: @Model.list[0].main.humidity %</p>
-    <p>Sunrise: @Model.city.sunrise</p>
+    <p>Clouds: @Model.list[0].clouds.all %</p>
+    <p>Wind: @Model.list[0].wind.speed m/s</p>
+    <p>Rain: @(Model.list[0].rain?._3h ?? 0) mm</p>
+    <p>Timezone: @TimeSpan.FromSeconds(Model.city.timezone).ToString(@"hh\:mm\:ss")</p>
+    <p>Sunrise: @DateTimeOffset.FromUnixTimeSeconds(@Model.city.sunrise).ToLocalTime()</p>
+    <p>Sunset: @DateTimeOffset.FromUnixTimeSeconds(@Model.city.sunset).ToLocalTime()</p>
+
 }
+
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <p>@ViewBag.ErrorMessage</p>
+}
+

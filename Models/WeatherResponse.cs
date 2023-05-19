@@ -31,8 +31,8 @@ namespace ASPMVC.Models
         public string country { get; set; }
         public double population { get; set; }
         public double timezone { get; set; }
-        public double sunrise { get; set; }
-        public double sunset { get; set; }
+        public int sunrise { get; set; }
+        public int sunset { get; set; }
     }
 
     public class Clouds
