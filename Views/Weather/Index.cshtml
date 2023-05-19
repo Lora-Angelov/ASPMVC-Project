@@ -1,0 +1,15 @@
+﻿@model ASPMVC.Models.WeatherResponse
+
+<h1>Weather</h1>
+
+<form method="get">
+    <input type="text" name="city" placeholder="Enter a city" required />
+    <button type="submit">Get Weather</button>
+</form>
+
+@if (Model != null && Model.Main != null && !String.IsNullOrEmpty(Model.Name))
+    {
+    <h2>@Model.Name</h2>
+    <p>Temperature: @Model.Main.Temp ºC</p>
+    <p>Humidity: @Model.Main.Humidity %</p>
+}
